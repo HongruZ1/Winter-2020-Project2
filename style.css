@@ -1,0 +1,211 @@
+img {
+  position: fixed;
+  width: 800px;
+  height: 800px;
+  top: 0;
+  left: 400px;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  opacity: 0;
+  animation-name: opacity;
+  animation-delay: 7s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#Layer_1 {
+  position: fixed; /* Sit on top of the page content */
+    width: 800px;
+    height: 800px;
+    top: 0;
+    left: 400px;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#fig1 {
+  position: fixed; /* Sit on top of the page content */
+  opacity: 0;
+    width: 800px;
+    height: 800px;
+    top: 0;
+    left: 400px;
+    right: 0;
+    bottom: 0;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    animation-name: knock;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes knock {
+  0% {
+    left: 450px;
+    opacity: 0;
+    transform: skewX(0deg);
+  }
+
+  80% {
+    left: 400px;
+    opacity: 1;
+    transform: skewX(0deg);
+  }
+
+  90% {
+    left: 400px;
+    opacity: 1;
+    transform: skewX(5deg);
+  }
+
+  100% {
+    left: 400px;
+    opacity: 1;
+    transform: skewX(0deg);
+  }
+
+}
+#fig2 {
+  position: fixed; /* Sit on top of the page content */
+  opacity: 0;
+    width: 800px;
+    height: 800px;
+    top: 0;
+    left: 400px;
+    right: 0;
+    bottom: 0;
+    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+    animation-name: water;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes water {
+  0% {
+    left: 200px;
+    opacity: 0;
+  }
+  100% {
+    left: 400px;
+    opacity: 1;
+  }
+}
+
+#fig3 {
+  position: fixed; /* Sit on top of the page content */
+  opacity: 1;
+    width: 800px;
+    height: 800px;
+    top: 0;
+    left: 400px;
+    right: 0;
+    bottom: 0;
+    z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#fig4 {
+  position: fixed; /* Sit on top of the page content */
+  opacity: 1;
+    width: 800px;
+    height: 800px;
+    top: 0;
+    left: 400px;
+    right: 0;
+    bottom: 0;
+    z-index: 5; /* Specify a stack order in case you're using a different order for other elements */
+    animation-name: happy1;
+    animation-duration: 0.5s;
+    animation-delay: 2.4s;
+
+}
+@keyframes happy1 {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+#fig5 {
+  position: fixed; /* Sit on top of the page content */
+  opacity: 1;
+    width: 800px;
+    height: 800px;
+    top: 0;
+    left: 400px;
+    right: 0;
+    bottom: 0;
+    z-index: 6; /* Specify a stack order in case you're using a different order for other elements */
+    animation-name: happy1;
+    animation-duration: 0.5s;
+    animation-delay: 2.2s;
+}
+
+#fig67 {
+  position: fixed; /* Sit on top of the page content */
+  opacity: 1;
+    width: 800px;
+    height: 800px;
+    top: 0;
+    left: 400px;
+    right: 0;
+    bottom: 0;
+    z-index: 6; /* Specify a stack order in case you're using a different order for other elements */
+    animation-name: skew;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes skew {
+    0% {
+      transform: scale(1) rotate(2deg);
+    }
+    50% {
+      transform: scale(0.96) rotate(2deg);
+    }
+  }
+
+#baby {
+  position: fixed; /* Sit on top of the page content */
+  opacity: 1;
+    width: 800px;
+    height: 800px;
+    top: 0;
+    left: 400px;
+    right: 0;
+    bottom: 0;
+    z-index: 7; /* Specify a stack order in case you're using a different order for other elements */
+    animation-name: baby;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes baby {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+    top: -100px;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    top: 0px;
+  }
+}
